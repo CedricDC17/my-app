@@ -1,0 +1,25 @@
+// Variables
+$primary-color: #61dafb;
+$background-dark: #282c34;
+$background-light: #6c757d;
+$background-not-found: #343a40;
+$heading-color: #61dafb;
+$text-color: #FF6060;
+$about-heading-color: #fd7e14;
+
+
+body{
+  margin: 45px 100px 0;
+  text-align: center;
+}
+
+.link {
+  margin-top: 20px;
+  color: $primary-color;
+  text-decoration: none;
+  font-size: 1.2rem;
+  border: 2px solid $primary-color;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+}

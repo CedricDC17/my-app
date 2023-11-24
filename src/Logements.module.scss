@@ -1,0 +1,57 @@
+.slogan {
+  width: 100%;
+  height: 100px;
+  margin-top: 50px;
+}
+
+.paysage {
+  width: inherit;
+  height: inherit;
+  object-fit: cover;
+  border-radius: 25px;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-color: #F6F6F6;
+  border-radius: 25px;
+  padding: 20px;
+  margin-top: 43px;
+}
+
+.logementCard {
+  flex-basis: calc(33.333% - 20px); /* Pour 3 éléments par ligne */
+  margin: 10px;
+  min-width: 300px;
+  
+  width: 340px; // Trois cartes par ligne
+  margin: 15px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.imageText {
+  position: relative;
+  width: 100%;
+}
+
+.image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;border-radius: 10px;
+}
+
+.titleOverlay {
+  position: absolute;
+  bottom: 5px;
+  color: white;
+  width: 100%;
+  max-height: 40%;
+  overflow: hidden;
+  text-align: left;
+
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.5) 60%, transparent);
+  padding: 10px; 
+}

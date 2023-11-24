@@ -1,20 +1,23 @@
 // import logo from './logo.svg';
-import './App.css';
+import './App.scss';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./components/Home";
 import About from "./components/About";
-import Logements from "./components/Logements";
+import FicheLogements from "./components/FicheLogement";
 import NotFound from "./components/NotFound";
+import Layout from './components/Layout';
 
 function App() {
   return (
     <Router>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/logements" element={<Logements />} />
-        <Route path="*" element={<NotFound />} />
-      </Routes>
+      <Layout>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/fiche_logement" element={<FicheLogements />} />
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+      </Layout>
     </Router>
   );
 }
