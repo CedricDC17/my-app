@@ -7,6 +7,7 @@ function Home() {
     <div>
         <div className={styles.slogan}>
             <img src={paysageBackground} className={styles.paysage} alt="Paysages au bord d'une côte" />
+            <div className={styles.slogan_text}>Chez vous, partout et ailleurs</div>
         </div>
         <div className={styles.container}>
             {logements.map(logement => (
