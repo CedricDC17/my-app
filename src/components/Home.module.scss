@@ -33,32 +33,40 @@
   margin-bottom: 50px;
 
 }
+
 .card img {
-  width: 100%; /* Pour s'assurer que l'image couvre toute la largeur de la carte */
+  width: 100%;
+  /* Pour s'assurer que l'image couvre toute la largeur de la carte */
   min-height: auto;
-  display: block; /* Pour supprimer l'espace en dessous de l'image */
-  border-radius: 8px 8px 0 0; /* Arrondit seulement les coins supérieurs de l'image */
+  display: block;
+  /* Pour supprimer l'espace en dessous de l'image */
+  border-radius: 8px 8px 0 0;
+  /* Arrondit seulement les coins supérieurs de l'image */
 }
+
+.cardTitle {
+  position: absolute;
+  /* Positionne le texte de manière absolue par rapport à son parent .card */
+  bottom: 0;
+  /* Aligné en bas */
+  left: 0;
+  /* Aligné à gauche */
+  width: 100%;
+  /* La largeur du texte s'étendra à toute la largeur de la carte */
+  background-color: rgba(0, 0, 0, 0.5);
+  /* Fond semi-transparent pour la lisibilité du texte */
+  color: white;
+  /* Couleur du texte */
+  text-align: left;
+  padding: 10px 0px;
+  /* Ajoute de l'espacement au-dessus et en dessous du texte */
+
+  border-radius: 0 0 8px 8px;
+  /* Arrondit seulement les coins inférieurs */
+}
+
 @media (max-width: 768px) {
   .card {
     flex: 0 1 100%;
   }
-}
-
-
-
-
-
-
-.cardTitle {
-  position: absolute; /* Positionne le texte de manière absolue par rapport à son parent .card */
-  bottom: 0; /* Aligné en bas */
-  left: 0; /* Aligné à gauche */
-  width: 100%; /* La largeur du texte s'étendra à toute la largeur de la carte */
-  background-color: rgba(0, 0, 0, 0.5); /* Fond semi-transparent pour la lisibilité du texte */
-  color: white; /* Couleur du texte */
-  text-align: left;
-  padding: 10px 0px ; /* Ajoute de l'espacement au-dessus et en dessous du texte */
-  
-  border-radius: 0 0 8px 8px; /* Arrondit seulement les coins inférieurs */
 }
