@@ -1,9 +1,11 @@
+import styles from '../components/Footer.module.scss';
+import logo from '../assets/logo footer.svg'
 
 function Footer() {
     return (
-      <footer>
-        {/* Contenu du footer */}
-        <p>© 2023 Votre Entreprise</p>
+      <footer className={styles.footer}>
+        <img src={logo} alt="Kasa logo"/>
+        <p>© 2020 Kasa. All rights reserved</p>
       </footer>
     );
   }

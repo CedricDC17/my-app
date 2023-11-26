@@ -1,0 +1,12 @@
+.footer {
+    width: 100vw; /* Sets the width to the full width of the viewport */
+    position: relative; /* Adjust as necessary, could be 'absolute' if at the bottom of the page */
+    left: 50%; /* This combination of left and right negative margin centers the element */
+    right: 50%;
+    margin-left: -50vw; /* Half of full viewport width */
+    margin-right: -50vw;
+    background-color: black; /* Footer background color */
+    color: white; /* Text color within the footer */
+    text-align: center; /* Centers the text inside the footer */
+    padding: 20px 0; /* Gives some vertical space inside the footer */
+  }

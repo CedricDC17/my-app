@@ -1,0 +1,64 @@
+.slogan {
+  position: relative;
+  width: 100%;
+  height: 150px;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../assets/paysage-background.png');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  margin-top: 50px;
+}
+
+.slogan span {
+  color: white;
+  font-size: 24px;
+}
+
+.container {
+  border-radius: 25px;
+  padding: 20px;
+  margin-top: 40px;
+  background-color: #F6F6F6;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.card {
+  position: relative;
+  flex: 0 1 30%;
+  margin-bottom: 50px;
+
+}
+.card img {
+  width: 100%; /* Pour s'assurer que l'image couvre toute la largeur de la carte */
+  min-height: auto;
+  display: block; /* Pour supprimer l'espace en dessous de l'image */
+  border-radius: 8px 8px 0 0; /* Arrondit seulement les coins supérieurs de l'image */
+}
+@media (max-width: 768px) {
+  .card {
+    flex: 0 1 100%;
+  }
+}
+
+
+
+
+
+
+.cardTitle {
+  position: absolute; /* Positionne le texte de manière absolue par rapport à son parent .card */
+  bottom: 0; /* Aligné en bas */
+  left: 0; /* Aligné à gauche */
+  width: 100%; /* La largeur du texte s'étendra à toute la largeur de la carte */
+  background-color: rgba(0, 0, 0, 0.5); /* Fond semi-transparent pour la lisibilité du texte */
+  color: white; /* Couleur du texte */
+  text-align: left;
+  padding: 10px 0px ; /* Ajoute de l'espacement au-dessus et en dessous du texte */
+  
+  border-radius: 0 0 8px 8px; /* Arrondit seulement les coins inférieurs */
+}
