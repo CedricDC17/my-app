@@ -1,11 +1,12 @@
 .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  nav a {
-    text-decoration: none;
-    color: #FF6060;
-    margin-left: 20px;
-  }
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav a {
+  color: #FF6060;
+  margin-left: 20px;
+  border-bottom: 1px #FF6060;
+  font-size: 18px;
+}

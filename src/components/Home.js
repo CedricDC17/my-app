@@ -4,7 +4,7 @@ import styles from '../components/Home.module.scss';
 function Home() {
     return (
         <div>
-            <div className={styles.slogan}>
+            <div className={styles.banner}>
                 <span>Chez vous, partout et ailleurs</span>
             </div>
 

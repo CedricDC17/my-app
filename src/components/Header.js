@@ -7,8 +7,8 @@ function Header() {
     <header className={styles.header}>
         <img src={logo} alt="Kasa logo"/>
       <nav>
-        <Link to="/">Accueil</Link>
-        <Link to="/about">À propos</Link>
+        <Link className={styles.navLink} to="/">Accueil</Link>
+        <Link className={styles.navLink} to="/about">À propos</Link>
       </nav>
     </header>
   );

@@ -1,0 +1,40 @@
+.banner {
+  position: relative;
+  width: 100%;
+  height: 250px;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../assets/mountains-landscape.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 25px;
+  margin-top: 50px;
+}
+
+.dropdownSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.box {
+  position: relative;
+  width: 250px;
+  height: 250px;
+  background-color: red;
+  margin: 5px 0;
+}
+
+.dropdown {
+  position: relative;
+  width: 100%;
+  height: 60px;
+  background-color: blue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
