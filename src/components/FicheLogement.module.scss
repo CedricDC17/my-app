@@ -1,0 +1,37 @@
+.description {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+
+    > * { // Targeting all direct children of the .description container
+        width: calc(50% - 10px); // Assuming you want a gap of 20px between two items
+        margin-bottom: 20px; // Space between rows, if needed
+
+        &:nth-child(odd) { // This targets the first item of each row
+            margin-right: 20px; // If you want space between two items
+        }
+    }
+
+    > :last-child { // Targets the last child of the .description container
+        width: 100%; // Makes the last child take full width
+        margin-right: 0; // Resets any margin that may have been set earlier
+    }
+}
+
+
+
+.tagsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; // Adjust the gap as needed
+}
+
+.tagBubble {
+    background-color: #ffefd5; // Light peach background, change as needed
+    padding: 5px 10px; // Adjust padding as needed
+    border-radius: 15px; // Gives a rounded shape to the tag
+    font-size: 0.8rem; // Adjust the font size as needed
+    color: #555; // Darker text color for contrast
+    white-space: nowrap; // Keeps the text in a single line
+}

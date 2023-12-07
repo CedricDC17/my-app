@@ -18,21 +18,31 @@ const FicheLogement = () => {
       <div className={styles.description}>
         <div className={styles.title}>
           <h1>{logement.title}</h1>
-          <p></p>
+          <p>{logement.location}</p>
         </div>
         <div className={styles.profile}>
-          <span>Alexandre Dumas</span>
-          <img alt='profile'></img>
+          <span>{logement.host.name}</span>
+          <img src={logement.host.picture} alt='profile'></img>
         </div>
-        <div className={styles.tags}></div>
-        <div className={styles.rates}></div>
+        <div className={styles.tagsContainer}>
+          {logement.tags.map((tag, index) => (
+            <span key={index} className={styles.tagBubble}>{tag}</span>
+          ))}
+        </div>
+        <div className={styles.rates}>
+          {Array.from({ length: 5 }, (_, index) => (
+            <span key={index}>
+              {index < logement.rating ? '★' : '☆'}
+            </span>
+          ))}
+        </div>
         <div className={styles.details}>
           <Dropdown buttonText='Description' contentText={logement.description} />
-          <Dropdown buttonText='Équipements' contentText={logement.equipments} />
+          <Dropdown buttonText='Équipements' contentText={logement.equipments.join(', ')} />
         </div>
-
       </div>
     </div>
+
   );
 };
 
