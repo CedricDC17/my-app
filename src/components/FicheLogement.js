@@ -13,7 +13,9 @@ const FicheLogement = () => {
 
   return (
     <div>
+      <div className={styles.carousel}>
       <Carousel images={logement.pictures} />
+      </div>
 
       <div className={styles.description}>
         <div className={styles.title}>
