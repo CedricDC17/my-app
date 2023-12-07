@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import logements from '../logements.json';
 import styles from '../components/Home.module.scss';
 
@@ -10,10 +11,10 @@ function Home() {
 
             <div className={styles.container}>
                 {logements.map(logement => (
-                    <div key={logement.id} className={styles.card}>
+                    <Link to={`/fiche_logement/${logement.id}`} key={logement.id} className={styles.card}>
                         <img src={logement.cover} alt={logement.title} />
                         <div className={styles.cardTitle}>{logement.title}</div>
-                    </div>
+                    </Link>
                 ))}
             </div>
         </div>
@@ -21,4 +22,3 @@ function Home() {
 }
 
 export default Home;
-
