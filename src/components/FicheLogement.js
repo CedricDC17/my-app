@@ -40,7 +40,7 @@ const FicheLogement = () => {
         </div>
         <div className={styles.details}>
           <Dropdown buttonText='Description' contentText={logement.description} />
-          <Dropdown buttonText='Équipements' contentText={logement.equipments.join(', ')} />
+          <Dropdown buttonText='Équipements' contentText={logement.equipments} />
         </div>
       </div>
     </div>

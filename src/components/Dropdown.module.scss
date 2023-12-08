@@ -15,13 +15,20 @@
 }
 
 .dropdownContent {
-    background-color: #f9f9f9;
     width: 100%;
+    height: 400px;
     min-width: 160px;
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.3s ease-out;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    text-align: left;
+    background-color: #F6F6F6;
+
+}
+
+.dropContainer{
+    padding: 20px;
 }
 
 p {
@@ -32,6 +39,8 @@ p {
     max-height: 150px;
 }
 
-.droptx p {
-    width: 100%;
+
+.droplist{
+    padding-bottom: 5px;
 }
+

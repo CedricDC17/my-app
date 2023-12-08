@@ -15,12 +15,22 @@ const Dropdown = ({ buttonText, contentText }) => {
             <button className={styles.dropbtn} onClick={toggleDropdown}>
                 {buttonText}
             </button>
-            <div className={`${contentClass} ${styles.droptxt}`}>
-                <p>{contentText}</p>
+            <div className={contentClass}>
+                <div className={styles.dropContainer}>
+                    {Array.isArray(contentText) ? (
+                        contentText.map((item, index) => (
+                            <p key={index} className={styles.droplist}>{item}</p>
+                        ))
+                    ) : (
+                        <p className={styles.droptxt}>{contentText}</p>
+                    )}
+                </div>
             </div>
         </div>
     );
-    
+
 };
 
 export default Dropdown;
+
+
