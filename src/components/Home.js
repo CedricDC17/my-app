@@ -13,8 +13,10 @@ function Home() {
                 {logements.map(logement => (
                     <Link to={`/fiche_logement/${logement.id}`} key={logement.id} className={styles.card}>
                         <img src={logement.cover} alt={logement.title} />
+                        <div className={styles.gradient}></div>
                         <div className={styles.cardTitle}>{logement.title}</div>
                     </Link>
+
                 ))}
             </div>
         </div>
