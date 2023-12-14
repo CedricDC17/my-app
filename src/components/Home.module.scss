@@ -25,6 +25,11 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+
+  &:after {
+    content: '';
+    width: 30%; 
+  }
 }
 
 .card {
