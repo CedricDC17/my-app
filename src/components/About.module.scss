@@ -12,7 +12,7 @@
   margin-top: 50px;
 }
 
-.dropdownContainer{
+.dropdownContainer {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -21,10 +21,20 @@
   gap: 25px;
 }
 
-.aboutmain{
+.aboutmain {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 50px;
+}
+
+@media (max-width:768px) {
+  .dropdownContainer{
+    width: 100%;
+  }
+
+  .banner{
+    height: 125px;
+  }
 }
