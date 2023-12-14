@@ -104,4 +104,14 @@
         flex-wrap: wrap
     }
 
+    .description{
+        flex-direction: column;
+    }
+
+    .title {
+        >h1,
+        p {
+            width: 100%;
+        }
+    }
 }

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import styles from '../components/Dropdown.module.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
+import { faChevronUp } from '@fortawesome/free-solid-svg-icons';
 
 
 
@@ -13,7 +13,7 @@ const Dropdown = ({ buttonText, contentText, style }) => {
     };
 
     const arrowClass = isOpen ? `${styles.arrow} ${styles.activeArrow}` : styles.arrow;
-    const arrow = <FontAwesomeIcon className={arrowClass} icon={faChevronDown} />
+    const arrow = <FontAwesomeIcon className={arrowClass} icon={faChevronUp} />
     const contentClass = isOpen ? `${styles.dropdownContent} ${styles.active}` : styles.dropdownContent;
 
     return (
