@@ -98,3 +98,10 @@
         font-size: 30px;
     }
 }
+
+@media (max-width: 768px) {
+    .details {
+        flex-wrap: wrap
+    }
+
+}
