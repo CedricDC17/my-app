@@ -34,7 +34,6 @@
   margin-bottom: 50px;
   width: 340px;
   height: 340px;
-
 }
 
 .card img {
@@ -49,7 +48,7 @@
 .cardTitle {
   position: absolute;
   bottom: 0;
-  left: 0;
+  left: 5px;
   width: 80%;
   color: white;
   text-align: left;
@@ -61,11 +60,26 @@
   height: 100%;
   position: absolute;
   top: 0;
-  background: linear-gradient(0deg, rgba(0,0,0,0.75) 0%, rgba(255,255,255,0) 25%, rgba(255,255,255,0) 100%);
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.75) 0%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 100%);
 }
 
 @media (max-width: 768px) {
+
+
   .card {
     flex: 0 1 100%;
+    height: auto;
   }
+
+  .banner {
+    justify-content: flex-start;
+    text-align: left;
+  }
+
+  .banner span{
+    padding-left: 10px;
+    width: 80%;
+  }
+
+
 }

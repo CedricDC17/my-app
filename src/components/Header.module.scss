@@ -2,18 +2,28 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-nav a {
-  text-decoration: none;
-  color: #FF6060;
-  margin-left: 20px;
-  font-size: 18px;
+  ;
 }
 
 .navLink {
-  // Vos styles existants pour les liens
+  text-decoration: none;
+  color: #FF6060;
+  margin-left: 20px;
+  font-size: 24px;
 
   &.active {
-    text-decoration: underline;  }
+    text-decoration: underline;
+  }
+}
+
+@media (max-width: 768px) {
+  .logo{
+    width: 146px;
+    height: 47px;
+  }
+
+  .navLink {
+    margin-left: 5px;
+    font-size: 12px;
+  }
 }

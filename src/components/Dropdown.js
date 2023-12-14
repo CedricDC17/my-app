@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import styles from '../components/Dropdown.module.scss';
 
-const Dropdown = ({ buttonText, contentText }) => {
+const Dropdown = ({ buttonText, contentText , style}) => {
     const [isOpen, setIsOpen] = useState(false);
 
     const toggleDropdown = () => {
@@ -15,7 +15,7 @@ const Dropdown = ({ buttonText, contentText }) => {
             <button className={styles.dropbtn} onClick={toggleDropdown}>
                 {buttonText}
             </button>
-            <div className={contentClass}>
+            <div className={`${contentClass} ${style}`}>
                 <div className={styles.dropContainer}>
                     {Array.isArray(contentText) ? (
                         contentText.map((item, index) => (

@@ -10,17 +10,17 @@ function Header() {
 
   return (
     <header className={styles.header}>
-      <Link to="/"> <img src={logo} alt="Kasa logo"/></Link>
-      
+      <Link to="/"> <img src={logo} alt="Kasa logo" className={styles.logo}/></Link>
+
       <nav>
-        <Link 
-          className={`${styles.navLink} ${isActive('/') ? styles.active : ''}`} 
+        <Link
+          className={`${styles.navLink} ${isActive('/') ? styles.active : ''}`}
           to="/"
         >
           Accueil
         </Link>
-        <Link 
-          className={`${styles.navLink} ${isActive('/about') ? styles.active : ''}`} 
+        <Link
+          className={`${styles.navLink} ${isActive('/about') ? styles.active : ''}`}
           to="/about"
         >
           À propos

@@ -2,19 +2,25 @@ import React from 'react';
 import { useParams } from 'react-router-dom';
 import logements from '../logements.json';
 import Carousel from './Carousel';
-import styles from './FicheLogement.module.scss'
-import Dropdown from './Dropdown'
+import styles from './FicheLogement.module.scss';
+import Dropdown from './Dropdown';
+import NotFound from './NotFound';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faStar } from '@fortawesome/free-solid-svg-icons';
+
+const starFull = <FontAwesomeIcon icon={faStar} color="#f26964" />
+const starEmpty = <FontAwesomeIcon icon={faStar} color="#E3E3E3" />
 
 const FicheLogement = () => {
   let { logementId } = useParams();
   const logement = logements.find(logement => logement.id === logementId);
 
-
+  if (!logement) return <NotFound />
 
   return (
     <div>
       <div className={styles.carousel}>
-      <Carousel images={logement.pictures} />
+        <Carousel images={logement.pictures} />
       </div>
 
       <div className={styles.description}>
@@ -34,7 +40,7 @@ const FicheLogement = () => {
         <div className={styles.rates}>
           {Array.from({ length: 5 }, (_, index) => (
             <span key={index}>
-              {index < logement.rating ? '★' : '☆'}
+              {index < logement.rating ? starFull : starEmpty}
             </span>
           ))}
         </div>
