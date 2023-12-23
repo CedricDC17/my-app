@@ -11,7 +11,7 @@ import { faStar } from '@fortawesome/free-solid-svg-icons';
 const starFull = <FontAwesomeIcon icon={faStar} color="#f26964" />
 const starEmpty = <FontAwesomeIcon icon={faStar} color="#E3E3E3" />
 
-const FicheLogement = () => {
+function FicheLogement() {
   let { logementId } = useParams();
   const logement = logements.find(logement => logement.id === logementId);
 

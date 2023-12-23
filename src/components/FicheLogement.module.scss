@@ -46,14 +46,6 @@
     white-space: nowrap;
 }
 
-#dropdownDetails {
-    .dropdownContent {
-        height: 400px;
-    }
-}
-
-
-
 .title {
     text-align: left;
     color: #FF6060;
@@ -146,7 +138,8 @@
         width: 50%;
         font-size: 12px;
         order: 4;
-        >img{
+
+        >img {
             width: 50px;
             height: 50px;
         }
@@ -157,7 +150,7 @@
         font-size: 13px;
         order: 5;
 
-        >div div button{
+        >div div button {
             font-size: 13px;
             padding: 5px;
         }

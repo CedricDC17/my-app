@@ -24,7 +24,7 @@ const Dropdown = ({ buttonText, contentText, style }) => {
                     {arrow}
                 </button>
             </div>
-            <div className={`${contentClass} ${style}`}>
+            <div className={contentClass}>
                 <div className={styles.dropContainer}>
                     {Array.isArray(contentText) ? (
                         contentText.map((item, index) => (
