@@ -28,12 +28,11 @@
 
   &:after {
     content: '';
-    width: 30%; 
+    width: 30%;
   }
 }
 
 .card {
-  border-radius: 10px;
   position: relative;
   flex: 0 1 30%;
   margin-bottom: 50px;
@@ -47,7 +46,7 @@
   object-fit: cover;
   min-height: auto;
   display: block;
-  border-radius: 8px 8px 0 0;
+  border-radius: 8px;
 }
 
 .cardTitle {
@@ -65,10 +64,16 @@
   height: 100%;
   position: absolute;
   top: 0;
+  border-radius: 8px;
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.75) 0%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 100%);
 }
 
 @media (max-width: 768px) {
+
+  .container {
+    background-color: transparent;
+    padding: 0;
+  }
 
 
   .card {
@@ -81,7 +86,7 @@
     text-align: left;
   }
 
-  .banner span{
+  .banner span {
     padding-left: 10px;
     width: 80%;
   }

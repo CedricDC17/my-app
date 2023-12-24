@@ -6,7 +6,7 @@
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: transparent;
     color: white;
     border: none;
     padding: 10px;
@@ -30,8 +30,24 @@
     border-radius: 25px;
 }
 
+.imageNumber{
+    position: absolute;
+    bottom: 5%;
+    left: 49%;
+    color: white;
+}
+
+.inactive {
+color: transparent;}
+
 @media (max-width: 768px) {
     .carousel img {
         height: 200px;
     }
+
+    .carousel svg { 
+        width: 20px;    
+    }
+
+
 }

@@ -1,0 +1,21 @@
+.rates {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    width: 200px;
+    color: #FF6060;
+
+    >span {
+        font-size: 30px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .rates {
+    justify-content: flex-start;
+        >span {
+            font-size: 15px;
+        }
+    }
+}

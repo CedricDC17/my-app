@@ -1,0 +1,18 @@
+.tagsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 60%;
+}
+
+.tagBubble {
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    color: #fff;
+    white-space: nowrap;
+    width: 170px;
+    font-size: 15px;
+    background-color: #FF6060;
+    color: #fff;
+}

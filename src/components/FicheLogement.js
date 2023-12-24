@@ -5,11 +5,9 @@ import Carousel from './Carousel';
 import styles from './FicheLogement.module.scss';
 import Dropdown from './Dropdown';
 import NotFound from './NotFound';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faStar } from '@fortawesome/free-solid-svg-icons';
+import Rating from './Rating';
+import Tags from './Tags';
 
-const starFull = <FontAwesomeIcon icon={faStar} color="#f26964" />
-const starEmpty = <FontAwesomeIcon icon={faStar} color="#E3E3E3" />
 
 function FicheLogement() {
   let { logementId } = useParams();
@@ -33,16 +31,10 @@ function FicheLogement() {
           <img src={logement.host.picture} alt='profile'></img>
         </div>
         <div className={styles.tagsContainer}>
-          {logement.tags.map((tag, index) => (
-            <span key={index} className={styles.tagBubble}>{tag}</span>
-          ))}
+          <Tags tags={logement.tags} />
         </div>
-        <div className={styles.rates}>
-          {Array.from({ length: 5 }, (_, index) => (
-            <span key={index}>
-              {index < logement.rating ? starFull : starEmpty}
-            </span>
-          ))}
+        <div className={styles.rates} >
+          <Rating rating={logement.rating} />
         </div>
         <div className={styles.details}>
           <Dropdown buttonText='Description' contentText={logement.description} />
