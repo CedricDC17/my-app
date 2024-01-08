@@ -15,7 +15,7 @@ function Header() {
       <nav>
         <Link
           className={`${styles.navLink} ${isActive('/') ? styles.active : ''}`}
-          to="/"
+          to="/my-app"
         >
           Accueil
         </Link>
