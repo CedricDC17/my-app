@@ -10,7 +10,7 @@ function Header() {
 
   return (
     <header className={styles.header}>
-      <Link to="/"> <img src={logo} alt="Kasa logo" className={styles.logo}/></Link>
+      <Link to="/my-app"> <img src={logo} alt="Kasa logo" className={styles.logo}/></Link>
 
       <nav>
         <Link

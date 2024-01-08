@@ -12,7 +12,7 @@ function App() {
     <Router>
       <Layout>
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/my-app" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/fiche_logement/:logementId" element={<FicheLogement />} />
           <Route path="*" element={<NotFound />} />
