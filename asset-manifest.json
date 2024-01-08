@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.1aa83e0c.css",
-    "main.js": "/static/js/main.0f9467fe.js",
-    "static/js/787.d4aba7ab.chunk.js": "/static/js/787.d4aba7ab.chunk.js",
-    "static/media/mountains-landscape.jpg": "/static/media/mountains-landscape.796d007cebdd47cc489b.jpg",
-    "static/media/paysage-background.png": "/static/media/paysage-background.19221376a0aa2549c135.png",
-    "static/media/logo.svg": "/static/media/logo.e4c19ab08388715cdafcc1bc5806f288.svg",
-    "static/media/logo footer.svg": "/static/media/logo footer.eece6f6c5884d7eb519cce4cd583a78d.svg",
-    "index.html": "/index.html",
-    "main.1aa83e0c.css.map": "/static/css/main.1aa83e0c.css.map",
-    "main.0f9467fe.js.map": "/static/js/main.0f9467fe.js.map",
-    "787.d4aba7ab.chunk.js.map": "/static/js/787.d4aba7ab.chunk.js.map"
+    "main.css": "/my-app/static/css/main.c1e6d5a7.css",
+    "main.js": "/my-app/static/js/main.39ae63ec.js",
+    "static/js/787.d4aba7ab.chunk.js": "/my-app/static/js/787.d4aba7ab.chunk.js",
+    "static/media/mountains-landscape.jpg": "/my-app/static/media/mountains-landscape.796d007cebdd47cc489b.jpg",
+    "static/media/paysage-background.png": "/my-app/static/media/paysage-background.19221376a0aa2549c135.png",
+    "static/media/logo.svg": "/my-app/static/media/logo.e4c19ab08388715cdafcc1bc5806f288.svg",
+    "static/media/logo footer.svg": "/my-app/static/media/logo footer.eece6f6c5884d7eb519cce4cd583a78d.svg",
+    "index.html": "/my-app/index.html",
+    "main.c1e6d5a7.css.map": "/my-app/static/css/main.c1e6d5a7.css.map",
+    "main.39ae63ec.js.map": "/my-app/static/js/main.39ae63ec.js.map",
+    "787.d4aba7ab.chunk.js.map": "/my-app/static/js/787.d4aba7ab.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1aa83e0c.css",
-    "static/js/main.0f9467fe.js"
+    "static/css/main.c1e6d5a7.css",
+    "static/js/main.39ae63ec.js"
   ]
 }
