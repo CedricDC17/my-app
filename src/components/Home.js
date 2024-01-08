@@ -11,7 +11,7 @@ function Home() {
 
             <div className={styles.container}>
                 {logements.map(logement => (
-                    <Link to={`/fiche_logement/${logement.id}`} key={logement.id} className={styles.card}>
+                    <Link to={`/my-app/fiche_logement/${logement.id}`} key={logement.id} className={styles.card}>
                         <img src={logement.cover} alt={logement.title} />
                         <div className={styles.gradient}></div>
                         <div className={styles.cardTitle}>{logement.title}</div>

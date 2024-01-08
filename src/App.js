@@ -13,8 +13,8 @@ function App() {
       <Layout>
         <Routes>
           <Route path="/my-app" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/fiche_logement/:logementId" element={<FicheLogement />} />
+          <Route path="/my-app/about" element={<About />} />
+          <Route path="/my-app/fiche_logement/:logementId" element={<FicheLogement />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </Layout>

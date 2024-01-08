@@ -14,14 +14,14 @@ function Header() {
 
       <nav>
         <Link
-          className={`${styles.navLink} ${isActive('/') ? styles.active : ''}`}
+          className={`${styles.navLink} ${isActive('/my-app') ? styles.active : ''}`}
           to="/my-app"
         >
           Accueil
         </Link>
         <Link
-          className={`${styles.navLink} ${isActive('/about') ? styles.active : ''}`}
-          to="/about"
+          className={`${styles.navLink} ${isActive('/my-app/about') ? styles.active : ''}`}
+          to="/my-app/about"
         >
           À propos
         </Link>
